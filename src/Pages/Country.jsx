@@ -1,6 +1,7 @@
 import { useEffect, useTransition, useState } from "react"
 import { getCountryData } from "../api/postApi";
 import { Loader } from "../components/UI/Loader";
+import { CountryCard } from "../components/Layout/CountryCard";
 
 export const Country = () => {
     const [isPending, startTransition] = useTransition();
