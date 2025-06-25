@@ -1,4 +1,8 @@
+import { NavLink } from "react-router-dom"
+
+
 export const CountryCard = ({ country }) => {
+
     const { population, name, region, capital, flags } = country
     return (
         <li className="country-card card">
@@ -6,7 +10,10 @@ export const CountryCard = ({ country }) => {
                 <img src={flags.svg} alt={flags.alt} />
             </div>
             <div className="country-info">
-                <p className="card-title">{name.common}</p>
+                <p className="card-title">{name.common.length>10 ? name.common.slice(0,10) + "...":
+                name.common}
+
+                </p>
                 <p>
                     <span className="card-description">Population:</span>
                     {population.toLocaleString()}
@@ -19,6 +26,9 @@ export const CountryCard = ({ country }) => {
                     <span className="card-description">Capital:</span>
                     {capital[0]}
                 </p>
+                <NavLink to={`/country/${name.common}`}>
+                <button>Read More</button>
+                </NavLink>
             </div>
 
         </li>
