@@ -1,7 +1,10 @@
-import { FiLoader } from "react-icons/fi";
 
-export const Loader=()=>{
-    return(
-        <FiLoader/>
-    )
+import "../../App.css";
+
+export function Loader() {
+  return (
+    <div className="container loader-section">
+      <div className="loader"></div>;
+    </div>
+  );
 }
