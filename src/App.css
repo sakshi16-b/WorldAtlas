@@ -42,9 +42,10 @@ li {
 
 a {
   color: #000;
+  text-decoration: none;
 
   &:hover {
-    color: #2e86c1;
+    text-decoration: none;
   }
 }
 
@@ -79,7 +80,7 @@ button {
 
 .container {
   max-width: 140rem;
-  margin: auto;
+  margin: auto!important;
 }
 
 .grid {
@@ -220,6 +221,7 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
+  margin:3rem
 }
 
 @media screen and (max-width: 991px) {
