@@ -15,8 +15,7 @@ export const CountryDetails = () => {
             const res = await getCountrySingleData(params.id);
             console.log(res)
             if (res.status == 200) {
-
-              setCountry(res.data[0]);
+                setCountry(res.data[0]);
             }
         })
     }, [])
@@ -76,7 +75,7 @@ export const CountryDetails = () => {
                 )}
                 <div className="country-card-backbtn">
                     <NavLink to='/country' className="backBtn">
-                    <button>Go Back</button>
+                        <button>Go Back</button>
                     </NavLink>
                 </div>
             </div>

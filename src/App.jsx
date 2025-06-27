@@ -1,5 +1,6 @@
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import { AppLayout } from "./components/Layout/AppLayout";
+import "./App.css"
 
 import { Contact } from "./Pages/Contact";
 import { Home } from "./Pages/Home";
@@ -7,7 +8,6 @@ import { Country } from "./Pages/Country";
 import { About } from "./Pages/About";
 import ErrorPage from "./Pages/ErrrorPage";
 import { CountryDetails } from "./components/Layout/CountryDetails";
-import "./App.css"
 
 
 
